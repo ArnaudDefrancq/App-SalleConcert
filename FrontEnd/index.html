@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salle de concert</title>
+    <link rel="stylesheet" href="./CSS/MainStyle.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <!-- Navbar pour administrateur -->
+      <a href="./index.html" class="title-main-page">Gestion salles</a>
+      <button class="login-btn">Administrateur</button>
+    </header>
+    <main class="main-section">
+      <!-- Une Section recherche -->
+      <section class="section-recherche">
+        <div class="div-recherche-input">
+          <label for="nameSalle" class="recherche-label">Nom </label>
+          <input
+            type="text"
+            id="nameSalle"
+            name="nameSalle"
+            class="recherche-input input-text"
+            data-input=""
+          />
+        </div>
+        <div class="div-recherche-input">
+          <label for="citySalle" class="recherche-label">Ville </label>
+          <input
+            type="text"
+            id="citySalle"
+            name="citySalle"
+            class="recherche-input input-text"
+            data-input=""
+          />
+        </div>
+        <div class="div-recherche-input">
+          <label for="stylesSalle" class="recherche-label">Style </label>
+          <select
+            name="stylesSalle"
+            id="stylesSalle"
+            class="recherche-input input-select"
+            data-input=""
+          >
+            <option></option>
+          </select>
+        </div>
+        <button id="btn-reset-search">Reset</button>
+      </section>
+      <!-- Une Section affichage des salles  -->
+      <section class="section-affiche-Salle" id="section-affichage"></section>
+    </main>
+    <footer class="footer-section">
+      <!-- Certif -->
+      <p class="text-footer">Ne pas copier, merci bien !</p>
+    </footer>
+  </body>
+  <script type="module" src="./JS/Controllers/GetAllSalle.js"></script>
+</html>

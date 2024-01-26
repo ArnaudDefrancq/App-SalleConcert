@@ -1,0 +1,40 @@
+BackEnd
+- Compteur pour le POST (En back) => Pour ajouter l'Id, Récupérer le dernier Id du tableau du GetAllSalle et faire  + 1. OK 
+- Améliorer le Back ( Gérer le DTO, Mapper, Profil ) OK 
+- Systeme d'authentification ( Login, SignUp , TOKEN ...) Optionnelle
+
+Visuel
+- L'interface utilisateur (HTML / CSS) OK 
+
+AJAX en JS 
+- Afficher toutes les salles OK 
+- Faire une carte interactif + Détails En cours
+- Ajout d'avis Créer un formulaire
+
+Créer un administrateur
+- Ajouter une salle
+- Modifier une salle
+- Update une salle 
+- Supprimer une salle
+
+Création de concert (en react)
+
+
+new collection : 
+artiste
+datetime
+prixMin
+salle
+dejaPasse
+nbPlace
+
+react => 
+
+- install node
+- npm create vite@latest react-app-test -- --template react
+
+
+Breckpoint CSS:
+petit : 576px
+moyen : 768px
+large  1200px
