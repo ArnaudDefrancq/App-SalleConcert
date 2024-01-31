@@ -5,6 +5,7 @@ using ApiSalleConcert.Models.Tools;
 using ApiSalleConcert.Models.Dtos;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace ApiSalleConcert.Controllers
 {
@@ -26,17 +27,17 @@ namespace ApiSalleConcert.Controllers
         [HttpGet("{id:length(24)}")]
 		public async Task<ActionResult<Auth>> Get(string id)
 		{
-			var book = await _authService.GetAsync(id);
+            var auth = await _authService.GetAsync(id);
 
-			if (book is null)
+			if (auth is null)
 			{
 				return NotFound();
 			}
 
-			return book;
+			return auth;
 		}
 
-		[Authorize]
+		[AllowAnonymous]
 		[HttpPost("SignUp")]
 		public async Task<IActionResult> SignUp(AuthDtosSignUp newAuth)
 		{

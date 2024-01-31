@@ -16,7 +16,7 @@ const Card = ({ id, nom, ville, capacite, styles }) => {
     let navigate = useNavigate();
 
     const handelClickNav = (e) => {
-        let path = `/detail-salle/id?${e.target.dataset.salle}`;
+        let path = `/detail-salle/${e.target.dataset.salle}`;
         navigate(path);
     }
 

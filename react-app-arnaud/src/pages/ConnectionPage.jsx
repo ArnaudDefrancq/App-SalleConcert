@@ -1,10 +1,11 @@
-import ConnectPage from "../components/connexionPage/ConnectPage";
+import ConnectPage from '../components/connexionPage/ConnectPage'
 
 const ConnectionPage = () => {
     return ( 
-    <>
-        <ConnectPage />
-    </> );
+        <>
+            <ConnectPage />
+        </>
+     );
 }
  
 export default ConnectionPage;

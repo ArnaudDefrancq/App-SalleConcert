@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import MainPage from "../pages/MainPage";
-import DetailPage from "../pages/DetailPage";
+import DetailsPage from "../pages/DetailsPage";
 import FormPage from "../pages/FormPage";
 import ErrorPage from "../pages/ErrorPage";
 import ConnectionPage from "../pages/ConnectionPage";
@@ -9,7 +9,10 @@ import AddSallePage from "../pages/AddSallePage";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer"
 
+ 
 const Navigation = () => {
+
+
 
     return ( 
     <>
@@ -17,11 +20,11 @@ const Navigation = () => {
             <Header/>
                 <Routes>
                     <Route path="/" exact element={<MainPage />} />
-                    <Route path="/add-salle" exact element={<AddSallePage />} />
-                    <Route path="/detail-salle/id" exact element={<DetailPage />} />
+                    <Route path="/formSalle/:id" exact element={<AddSallePage />} />
+                    <Route path="/detail-salle/:id" exact element={<DetailsPage />} />
                     <Route path="/connexion" exact element={<ConnectionPage />} />
                     <Route path="/profil" exact element={<ProfilePage />} />
-                    <Route path="/formEvent" exact element={<FormPage />} />
+                    <Route path="/formEvent/:idSalle/:idEvent" exact element={<FormPage />} />
                     <Route path="*" element={<ErrorPage />} />
                 </Routes>
             <Footer/>
