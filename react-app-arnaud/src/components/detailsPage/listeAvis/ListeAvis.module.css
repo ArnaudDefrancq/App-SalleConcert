@@ -1,0 +1,18 @@
+.div {
+  display: grid;
+  grid-template-columns: repeat(3, 1.5fr);
+  gap: 3%;
+}
+
+.divBtn {
+  margin: 15% auto 5%;
+  width: 60%;
+}
+
+.btn {
+  padding: 10%;
+  width: 100%;
+  background-color: var(--color3);
+  font-size: 20px;
+  border-radius: 15px;
+}

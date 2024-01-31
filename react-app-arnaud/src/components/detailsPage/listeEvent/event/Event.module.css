@@ -1,0 +1,11 @@
+.div {
+  box-shadow: 0 0 4px 0 black;
+  border-radius: 15px;
+  background: white;
+  margin-bottom: 5%;
+  padding: 5%;
+}
+
+.p {
+  padding: 1% 0;
+}
