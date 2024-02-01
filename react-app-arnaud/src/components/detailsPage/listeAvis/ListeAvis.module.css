@@ -16,3 +16,24 @@
   font-size: 20px;
   border-radius: 15px;
 }
+
+.divForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+.label {
+  font-size: 24px;
+}
+
+.input {
+  width: 50%;
+  margin-left: 3%;
+  padding: 3%;
+}
+
+.containerBtn {
+  display: flex;
+}
